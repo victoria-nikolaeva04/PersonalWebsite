@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "author" content="Victoria Nikolaeva">
+        <meta name = "description" content="Website thats about Me & how to Contact ME">
+        <link rel="stylesheet" type="text/css" href="css/contact-style.css" />
+        <title>Viki's Website</title>
+    </head>
+
+    <body>
+        <header> 
+            <h1 class="title">:: Viki's Website ::</h1>
+            <hr>
+            <nav>
+                <a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="about-me.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="shop.html">Shop</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="contact-me.html"><strong>Contact</strong></a>
+            </nav>
+            <hr>
+        </header>
+        
+        <main class="contactHomePage">
+            <div class="social">
+                <h4 style="text-align: center;">You can follow me on these platforms:</h4>
+                <div class="socialMedia">
+                    <div class="center">
+                        <a class="socialMedia-item" href="https://www.instagram.com/vikiniki123/"><img src="images/instagram.png" alt="Instagram Logo"></a>
+                        <h4>Instagram</h4>
+                    </div>
+                    <div class="center">
+                        <a class="socialMedia-item" href="https://www.youtube.com/channel/UCRc7jRt6HDlDvpQ2CAAn5AQ"><img src="images/youtube.png" alt="Youtube Logo"></a>
+                        <h4>Youtube</h4>
+                    </div>
+                    <div class="center">
+                        <a class="socialMedia-item" href="https://www.facebook.com/profile.php?id=100019597779608"><img src="images/facebook.png" alt="FaceBook Logo"></a>
+                        <h4>Facebook</h4>
+                    </div>
+                    <div class="center">
+                        <a class="socialMedia-item" href="https://www.pinterest.com/vnikolaeva04/"><img src="images/pinterest.png" alt="Pinterest Logo"></a>
+                        <h4>Pinterest</h4>
+                    </div>
+                </div>
+            </div>
+            
+                
+            
+            <div class="messagerBox">
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset> 
+                        <legend><h4> Send Me a Message</h4></legend>         
+                        <label for="firstName">First Name:</label>
+                        <input type="text"
+                               name="firstName"   
+                               id="firstName" 
+                               autocomplete="on" 
+                               required />                        
+                        <br><br>
+                      
+                        <label for="lastName">Last Name:</label>
+                        <input type="text"
+                               name="lastName"
+                               id="lastName"
+                               autocomplete="on" 
+                               required/>
+
+                        <br><br>
+                                        
+                        <label for="emailAddr">&emsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:</label>
+                        <input type="text" 
+                               name="emailAddr"
+                               id="emailAddr"
+                               autocomplete="on"
+                               required/>
+
+                        <br><br>
+
+                        <legend>Purpose of Message:</legend>
+                            <p>
+                                <input type="radio"
+                                       name="message_purpose" 
+                                       id="friends"
+                                       values="friends">
+                                       <label for="friends">Wanna be friends?</label>
+                            </p>
+                            <p>
+                                <input type="radio"
+                                       name="message_purpose"
+                                       id="business" 
+                                       values="business">
+                                       <label for = "business">Business Proposition</label>
+                            </p>
+                                        
+                        <label for="message">Message:</label>
+                        <br>
+                            <textarea  name="message" 
+                                       id="message" 
+                                       cols="60" 
+                                       rows="10"
+                                       placeholder="Type your message here">
+                            </textarea>
+
+                        <hr>
+                          <button type="submit" id="submit-button">Submit</button>
+                          <button type="reset" id="reset-button">Reset</button>
+                        
+                    </fieldset>          
+                </form>
+            </div>
+        </main>
+
+        <br><br>
+        
+        <footer>
+                <nav>
+                    <a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="about-me.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="shop.html">Shop</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="contact-me.html">Contact</a>
+                </nav>
+                <p>&copy;Victoria Nikolaeva</p>
+                <br>
+        </footer>   
+    </body>
+</html> 

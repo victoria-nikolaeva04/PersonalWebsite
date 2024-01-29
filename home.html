@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "author" content="Victoria Nikolaeva">
+        <meta name = "description" content="The main page of the Viki's website">
+        <link rel="stylesheet" type="text/css" href="css/home-styles.css" />
+        <script src="js/slideshow.js"></script>
+        <title>Viki's Website</title>
+    </head>
+
+    <body>
+        <header> 
+            <h1 class="title">:: Viki's Website ::</h1>
+            <hr>
+            <nav>
+                <a href="home.html"><strong>Home</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="about-me.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="shop.html">Shop</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="contact-me.html">Contact</a>
+            </nav>
+            <hr>
+        </header>
+
+        <div class="homeContent">
+            <br>
+                <p id="quote">"They always say time changes things, but you actually have to change them yourself."<br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<em>- Andy Warhol</em></p>
+            <br>
+            
+            <div class="current">
+                <h3> - Current! - </h3>
+                <legend>&emsp;&emsp;These are the current projects and things that I am working on, hopefully they will be done by the summer...</legend>
+                <ul style="padding-left: 80px;">
+                    <li>
+                        <p><strong>Viki's Website</strong> - The summer project that will teach me the innerworking for website design, 
+                            hopefully teaching me a bit about the world of UX/UI design.<br> You are currently on it!
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Yoga with Tori</strong> - Recently became an offical yoga instructor for UD's Yoga Club. I am very excited for this chance
+                            and I can't wait to work on my flows for my future classes. I plan on having at least 3 flows that are for different
+                            skill levels
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>You & YouDee</strong> - Currently just a funny idea of making my school's mascot a dateable figure in a game</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="previous">
+                <div class="perText">
+                    <h3> - Perviously ... - </h3>
+                    <div>
+                        &emsp;&emsp;These are some works that I have worked on over the last couple of years.
+                    </div>
+                    <div>
+                        <dl style="padding-left: 60px;">
+                            <dt>★<em><strong>Annie the Ballet</strong></em></dt>
+                                <dd>☆ This was the most recent poster I did for my studio. I only had the course of a week to come up and execute
+                                    the poster, but I think it worked out in the end.
+                                </dd>
+                                <br>
+                            <dt>★<em><strong>Nutcracker 2022</strong></em></dt>
+                                <dd>☆ Created this poster during my senior year of highschool, a contribute to my
+                                    final year on the stage. Each of the different nutcracker represent the different levels for the classe
+                                    in the studio It was a nice way to close the curtains.
+                                </dd>
+                                <br>
+                            <dt>★<em><strong>The Wizarding World of Ballet</strong></em></dt>
+                                <dd>☆ This was the first poster I did for the studio, which is a rip-off of Harry Potter. It is still one of my
+                                    personal favorites that I have done.<br>
+                                    &emsp;Fun Fact: This was the first time the logo was used, that I also created.
+                                </dd>
+                                <br>
+                            <dt>★<em><strong>Seussical the Musical</strong></em></dt>
+                                <dd>☆ Seussical was created for my senior year spring musical, and it was an amazing opportunitity to take. I took alot of 
+                                    inspiration of the orginal source material and wanted to focus on very bright colors.
+                                </dd>
+                                <br>
+                            <dt>★<em><strong>Nutcracker 2020</strong></em></dt>
+                                <dd>☆ Honestly, this was not one of the best compare to others, I think I should have focus on the details and making things
+                                    more clean and professional. Maybe I will take the time to redo it for fun.
+                                </dd>
+                                <br>
+                            <dt>★<em><strong>Not that Deep Podcast</strong></em></dt>
+                                <dd>☆ This poster was for a friend who was running a podcast; Personally, his podcast sucks but at least his logos
+                                     and posters are top-tier</dd>
+                                <br>
+                        </dl>
+
+                    </div>
+                </div>
+                
+                <div class="slideShowBox">
+                    <div id="slideshow">
+                                
+                        <div class="mySlides fade">
+                            <img class="slide-img" src="images/annie.jpeg" alt="Annie"
+                            width="100%" height="100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="slide-img" src="images/nutcracker-2022.png" alt="Nutcracker 2022"
+                            width="100%" height="100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="slide-img" src="images/wizarding-world.png" alt="Wizarding World of Ballet"
+                            width="100%" height="100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="slide-img" src="images/suessical.png" alt="Seussical"
+                            width="100%" height="100%">
+                        
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="slide-img" src="images/nutcracker-express.png" alt="Nutcracker 2021"
+                            width="100%" height="100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="slide-img" src="images/not-that-deep.png" alt="Podcast Flyer"
+                            width="100%" height="100%">
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        </div>
+
+                </div>
+            </div>
+            
+            <div class="comingUp">
+                <h3> - Coming Up! - </h3> 
+                <h1>~ RANTS & TEAS ~</h1>
+                <p>★ The place to rant your heart out and be gifted a tea to ease yourself ★</p>
+                
+            </div>
+        </div>  
+
+            <br><br>
+
+        <footer>
+                <nav>
+                    <a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="about-me.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="shop.html">Shop</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="contact-me.html">Contact</a>
+                </nav>
+                <p>&copy;Victoria Nikolaeva</p>
+        </footer>
+
+    </body>
+
+    <script>
+        showSlides(1);
+    </script>
+</html> 

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "author" content="Victoria Nikolaeva">
+        <meta name = "description" content="The main page of the Viki's website">
+        <link rel="stylesheet" type="text/css" href="css/shop.css"/>
+        <script src="js/shopping-cart.js" async></script>
+        <title>Viki's Website</title>
+    </head>
+
+    <body>
+        <header> 
+            <h1 class="title">:: Viki's Website ::</h1>
+            <hr>
+            <nav>
+                <a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="about-me.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="shop.html"><strong>Shop</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="contact-me.html">Contact</a>
+            </nav>
+            <hr>
+        </header>
+
+        <div class="shopBody">
+            <br>
+                <button type="button" 
+                        id="cart-button"
+                        onclick="overlayOn()">
+                    Cart
+                </button>
+
+                <p id="quote" style="text-align: center;">Check out some of my prints <3</p>
+            <br>
+
+            <div class="prints">
+                <div class="print">
+                    <img id="image1" src="images/portal-2.png" alt="Portal 2 FanArt" class="print-item-image">
+                    <div class="print-item-title"><p><strong>GLaDOS Awakes (Portal 2 Fan Art)</strong></p></div>
+                    <div class="print-item-price"><p>$40.99</p></div>
+                    <button type="button" 
+                            class="add-to-cart-button"
+                            id="item1" 
+                            onclick="addItem(this); overlayOn()"
+                            data-image="images/portal-2.png"
+                            data-title="GLaDOS Awakes"
+                            data-price="40.99"
+                            data-index="1">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="print">
+                    <img id="image2" src="images/mental-flowers.jpeg" alt="Schizophrenia" class="print-item-image">
+                    <div class="print-item-title"><p><strong>Flowers - Schizophrenia</strong></p></div>
+                    <div class="print-item-price"><p>$25.00</p></div>
+                    <button type="button" 
+                            class="add-to-cart-button"
+                            id="item2" 
+                            onclick="addItem(this); overlayOn()"
+                            data-image="images/mental-flowers.jpeg"
+                            data-title="Schizophrenia"
+                            data-price="25.00"
+                            data-index="2">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="prints">
+                <div class="print">
+                    <img id="image3" src="images/living-room.png" alt="Living room" class="print-item-image">
+                    <div class="print-item-title"><p><strong>Cozy Living Room</strong></p></div>
+                    <div class="print-item-price"><p>$35.50</p></div>
+                    <button type="button"
+                            class="add-to-cart-button"
+                            id="item3" 
+                            onclick="addItem(this); overlayOn()"
+                            data-image="images/living-room.png"
+                            data-title="Cozy Living Room"
+                            data-price="35.50"
+                            data-index="3">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="print">
+                    <img id="image4" src="images/bill-cipher.png" alt="Gravity Falls FanArt" class="print-item-image">
+                    <div class="print-item-title"><p><strong>Playing in the Woods (Gravity Falls Fan Art)</strong></p></div>
+                    <div class="print-item-price"><p>$25.50</p></div>
+                    <button type="button"
+                            class="add-to-cart-button"
+                            id="item4" 
+                            onclick="addItem(this); overlayOn()"
+                            data-image="images/bill-cipher.png"
+                            data-title="Playing in the Woods"
+                            data-price="25.50"
+                            data-index="4">
+                        Add to Cart
+                    </button>
+                </div> 
+            </div> 
+        </div>
+                        
+        <div id="overlay">
+            <div id="overlay-item">
+                <section class="container content-section">
+                    <h3 class="section-header">CART</h3>
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">ITEM</span>
+                        <span class="cart-price cart-header cart-column">PRICE</span>
+                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                    </div>
+                    <div class="cart-items" id="cartContent">
+                        <!--
+                                This is where the items in cart would be stored
+                        -->
+                    </div>
+                    <br>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total:</strong>
+                        <span id="cart-total-price">0.00</span>
+                    </div>
+                    <br>
+                    <button type="button" id="close-button" onclick="overlayOff()">Close</button>
+                    <a href = "purchaseCart.html">
+                        <button type="button" id="order-button" onclick="saveCart()">Order Now</button>
+                    </a>
+                    
+                    
+                </section>
+            </div>
+        </div>
+        <footer>
+            <nav>
+                <a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="about-me.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="shop.html">Shop</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="contact-me.html">Contact</a>
+            </nav>
+            <p>&copy;Victoria Nikolaeva</p>
+            <br>
+        </footer>   
+    </body>
+</html> 
