@@ -9,6 +9,7 @@ function overlayOn() {
 
 
 //Shopping Cart
+
 //Remove Items
 function removeItemFromCart( id ){
     let removedItem = document.querySelector(`#cartItem${id}`);
@@ -108,7 +109,7 @@ function updatingTotalPrice( qtyChanged ){
     let items = document.querySelectorAll("input[type=number][id^='quantity']");
     
     for( let item of items) {
-        console.log("qty: " + item.value);
+        //console.log("qty: " + item.value);
         totalPrice += item.value * item.dataset.price;
     }
 
@@ -118,10 +119,34 @@ function updatingTotalPrice( qtyChanged ){
     return true;
 }
 
+function validateForm(){
+    let fname = document.getElementById("fname").value;
+    let lname = document.getElementById("lname").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+
+    let address = document.getElementById("address").value;
+    let city = document.getElementById("city").value;
+    let state = document.getElementById("state").value;
+    let zip = document.getElementById("zip").value;
+
+    let cardNum = document.getElementById("cardNumber").value;
+    let expNum = document.getElementById("expire").value;
+    let cvv = document.getElementById("cvv").value;
+
+   //To-Do: Work on Form Validation
+
+    return true;
+}
+
+
 /*Purchase Cart*/
 function purchaseClicked( id ) {
+    if(!validateForm()){
+        return false;
+    }
 
-    alert('Thank you for your purchase!')
+    alert('Thank you for your purchase!');
 
     let items = document.querySelectorAll("input[type=number][id^='quantity']");
     
@@ -130,9 +155,10 @@ function purchaseClicked( id ) {
             removeItemFromCart(item.dataset.id);
         }  
     }
-    updateCartTotal();
+    updatingTotalPrice();
     saveCart();
 
+    document.forms[0].reset();
     return true;
 }
 
@@ -150,10 +176,10 @@ function saveCart( id ) {
                             "itemIndex": item.dataset.id,
                             "itemPrice": item.dataset.price,
                             "itemImage":item.dataset.image
-            }
+            };
             itemsArray.push(itemObject);
         }
-        console.log(itemsArray)
+        //console.log(itemsArray)
         window.localStorage.setItem("shoppingCart", JSON.stringify(itemsArray));
        
       } else {

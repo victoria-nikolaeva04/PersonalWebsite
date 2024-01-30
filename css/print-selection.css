@@ -39,6 +39,17 @@ fieldset{
     border-style: dashed;
 }
 
+legend{
+    color: rgb(50, 71, 24);
+}
+
+.input{
+    border-style: double;
+    border-radius: 3px;
+    border-color: rgba(126, 146, 102, 0.3);
+    background-color: whitesmoke;
+}
+
 
 /*Print-Selection Page*/
 
@@ -71,16 +82,16 @@ h3{
 }
 
 #back-btn{
-    background-color:  rgb(211, 61, 61);
+    background-color:rgba(165, 165, 141, 0.9) ;
     border: none;
-    float: left;;
+    float: left;
     border-radius: 5px;
     color: white;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
-    margin-top: 22px;
+    font-size: 12px;
+    margin-top: 24px;
     margin-right: 10px; 
 }
 
@@ -89,9 +100,9 @@ h3{
 }
 
 #purchase-btn{
-    background-color: rgba(107, 112, 92, 0.7);
+    background-color: rgb(107, 112, 92);
     border: none;
-    float: right;
+    float: left;
     border-radius: 5px;
     color: white;
     padding: 10px 15px;
@@ -104,6 +115,18 @@ h3{
 
 #purchase-btn :hover{
     background-color:  rgba(107, 112, 92, 0.9);
+}
+
+/*Information Form*/
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell{
+    display:table-cell;
+    padding-left: 5px;
+    padding-top: 2px;
 }
 
 
@@ -144,6 +167,9 @@ h3{
     width: 100px;
     height: auto;
     border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(77, 81, 67, 0.2);
 }
 
 .cart-quantity-input {
@@ -168,21 +194,22 @@ h3{
 }
 
 .cart-total {
-    text-align: left;
     margin-top: 10px;
     margin-right: 10px;
 }
 
-.cart-total-title {
+#cart-total-title {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 20px;
     color:  rgb(77, 81, 67);
     margin-right: 20px;
+    text-align: left;
 }
 
-.cart-total-price {
+#cart-total-price {
     color: #333;
-    font-size: 1.1em;
+    font-size: large;
+    text-align: center;
 }
 
 .remove-button{
