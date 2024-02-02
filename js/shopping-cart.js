@@ -119,6 +119,7 @@ function updatingTotalPrice( qtyChanged ){
     return true;
 }
 
+//Form Validation
 function validateForm(){
     let fname = document.getElementById("fname").value;
     let lname = document.getElementById("lname").value;
@@ -133,8 +134,6 @@ function validateForm(){
     let cardNum = document.getElementById("cardNumber").value;
     let expNum = document.getElementById("expire").value;
     let cvv = document.getElementById("cvv").value;
-
-   //To-Do: Work on Form Validation
 
    if (fname.trim() === "" || lname.trim() === "") {
         alert("Please enter your first and/or last name");
@@ -177,7 +176,7 @@ function validateForm(){
 }
 
 
-/*Purchase Cart*/
+//Purchase Cart
 function purchaseClicked( id ) {
     if(!validateForm()){
         return false;
