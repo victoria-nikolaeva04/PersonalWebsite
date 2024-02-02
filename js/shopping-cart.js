@@ -136,6 +136,43 @@ function validateForm(){
 
    //To-Do: Work on Form Validation
 
+   if (fname.trim() === "" || lname.trim() === "") {
+        alert("Please enter your first and/or last name");
+        return false;
+    }
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+
+    if (!/^\d{10}$/.test(phone)) {
+        alert("Please enter a valid phone number");
+        return false;
+    }
+
+    if (address.trim() === "" || city.trim() === "" || state.trim() === "" || zip.trim() === "") {
+        alert("Please enter your full address");
+        return false;
+    }
+
+    if (!/^\d{16}$/.test(cardNum)) {
+        alert("Please enter a valid 16-digit card number.");
+        return false;
+    }
+
+    if (expNum === "") {
+        alert("Please enter a valid expiration date");
+        return false;
+    }
+
+    if (!/^\d{3}$/.test(cvv)) {
+        alert("Please enter a valid CVV");
+        return false;
+    }
+
+
     return true;
 }
 

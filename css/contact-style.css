@@ -39,6 +39,10 @@ fieldset{
     border-style: dashed;
 }
 
+legend{
+    color: rgb(50, 71, 24);
+}
+
 
 /* Contact Page */
 
@@ -97,6 +101,13 @@ main > div.social{
     display:flex;
     flex-direction: column;
     font-size: 15px;
+}
+
+.input{
+    border-style: double;
+    border-radius: 3px;
+    border-color: rgba(126, 146, 102, 0.3);
+    background-color: whitesmoke;
 }
 
 #submit-button{    
