@@ -6,3 +6,5 @@ items for sale. This interactive shop allowed users to view their cart, adjust i
 page representing the checkout process, complete with item listings, a form for user information input, and a purchase button. Implementing this functionality introduced more topics such as Web Storage and JSON manipulation, 
 making it the most challenging and time-intensive aspect of development. Despite the complexities, this iteration represents the culmination of my efforts, demonstrating proficiency in integrating JavaScript into a functional
 and dynamic web application.
+
+**The Shop is fake and the information asked to 'purchase' doesnt keep any of the data, just checks to see if the form is filled and then wipes it from the forms once all the forms are checked**
